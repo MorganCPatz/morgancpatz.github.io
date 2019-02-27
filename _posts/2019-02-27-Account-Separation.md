@@ -16,20 +16,20 @@ This post will focus on answering these questions by discussing the creation of 
 
 I mentioned you should have at least two accounts - standard user account for day to day activities and an administrator account for admin related tasks.  This can be further divided up and additional accounts can be created for specific tasks, permissions, privileges, etc. but two is the absolute bare minimum.  Depending on your environment, this could result in each person in IT having 3, 4, or even 5+ accounts.  This largely depends on the roles within IT and the access needed.  Personally I like the idea of 4x different types of accounts:  Standard User, Administrator, Workstation Administrator, and Enterprise/Domain Admin.
 
-<br>Standard User Account</br>:
+<b>Standard User Account</b>:
 -Account used for day to day activities, such as checking email, internet access, etc.  
 -This is a non-privileged account
 
-<br>Administrator Account</br>:
+<b>Administrator Account</b>:
 -Main Administrator Account - This varies but can be anything from Active Directory/Group Policy to Server Administrator  
 -This account has more permissions/privileges than standard user account
 -Should not be used to log into or administer workstations
 
-<br>Workstation Administrator</br>:
+<b>Workstation Administrator</b>:
 -Account specifically used for administering workstations and has Local\Admin privileges on workstations
 -Should not be used to log into workstations and should not be used as a day to day account
 
-<br>Enterprise/Domain Admin Account</br>:
+<b>Enterprise/Domain Admin Account</b>:
 -Account used solely for Domain Administration - IE on Domain Controllers only
 -Should not be used on workstations or servers, just on Domain Controllers
 
