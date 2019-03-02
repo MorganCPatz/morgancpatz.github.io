@@ -37,7 +37,7 @@ I mentioned you should have at least two accounts - standard user account for da
 **Domain Admin Account:** 
 
 * Account used solely for Domain Administration - IE on Domain Controllers
-* Used to add to Enterprise/Schema Admins as needed but should be removed from these gorups when finished
+* Used to add to Enterprise/Schema Admins as needed but removed from these groups when finished
 * Does **not** log into or administer workstations and or servers.  Used only on DCs
 
 Who gets what account depends largely on your environment, not everyone will need all 4x accounts.  Some will only need the standard user account and nothing else.  The point is, create separate accounts for separate tasks.  This helps to define roles, permissions, and privileges, and most importantly eliminates that single all powerful account.  If one of these accounts is compromised, then yes, bad things can still happen.  Regardless, care and effort should be taken to help secure these accounts. For example, this can be achieved by doing things such as:   
