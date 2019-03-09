@@ -44,8 +44,8 @@ Who gets what account depends largely on your environment, not everyone will nee
    
 * Creating and Setting Fine Grained Password Policies 
 * Setting User Rights Assignments > Deny Assignments to prevent certain accounts from certain actions 
-* Utilizing the accounts only for their intended purposes 
 * Enabling UAC on Workstations and Servers 
+* Utilizing the accounts only for their intended purposes 
 * Ensuring IT staff only have the accounts they need - Help Desk does not need an EA/DA Account.   
  
  
