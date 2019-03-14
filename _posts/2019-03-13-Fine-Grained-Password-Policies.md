@@ -47,7 +47,7 @@ For this, we're going to use the following command:
 `New-ADFineGrainedPasswordPolicy`
 
 For Cmd Help and Syntax see below:
-![Get-Help]({{ "/img/2019-03-13-Fine-Grained-Password-Policies/Get-Help.jpg" | absolute_url }})<br>
+![Get-Help]({{ "/img/2019-03-13-Fine-Grained-Password-Policies/Get-Help.JPG" | absolute_url }})<br>
 
 All the settings and parameters used should be pretty straight forward - the areas we want to to pay attention to and the format used, is for the following parameters:
 * LockoutDuration
@@ -57,7 +57,7 @@ All the settings and parameters used should be pretty straight forward - the are
 
 The format to set these is:  Days:Hours:Minutes:Seconds:Fractions of a second.  
 In the screenshot below, I created a FGPP named "FGPP - IT WSA"
-![WAC-FGPP]({{ "/img/2019-03-13-Fine-Grained-Password-Policies/WAC-FGPP.jpg" | absolute_url }})<br>
+![WAC-FGPP]({{ "/img/2019-03-13-Fine-Grained-Password-Policies/WAC-FGPP.JPG" | absolute_url }})<br>
 
 Everything above should make sense - there are a couple of settings we did not configure.  Namely, we didn't specify who the policy Applies To. This is easy enough to set with the following cmd:<br>
 `Add-ADFineGrainedPasswordPolicy -Identity 'FGPP - IT WSA' -Subjects 'IT_WSA'`<br><br>
@@ -65,11 +65,11 @@ This will add apply the FGPP to our group for Workstation Administrators - "IT_W
 ![WAC-ADD-FGPP]({{ "/img/2019-03-13-Fine-Grained-Password-Policies/WAC-ADD-FGPP.JPG" | absolute_url }})
 
 Looking at our FGPP in the Active Directory Administrative Center , we can confirm that what we see in PowerShell matches what we see in the GUI.
-![GUI-FGPP]({{ "/img/2019-03-13-Fine-Grained-Password-Policies/GUI-FGPP.jpg" | absolute_url }})
+![GUI-FGPP]({{ "/img/2019-03-13-Fine-Grained-Password-Policies/GUI-FGPP.JPG" | absolute_url }})
 
 One setting that is not set, is "Protect from accidental deletion."  While we did not specify this setting in our PowerShell cmd, it is by default, automatically selected when creating a FGPP via ADAC.  Otherwise, everything else not confiugred with PowerShell, will be set using the default values. When using PowerShell, make sure to specify the parameters for any settings you do not wish to use the default values.  Once created, verify your settings!  
 
 Lastly, we will want to confirm that our Password Policy Object (PSO) is applied to an account. <br>We can check this using the `Get-ADUserResultantPassword Policy`<br>
-![Get-UserPP]({{ "/img/2019-03-13-Fine-Grained-Password-Policies/Get-UserPP.jpg" | absolute_url }})
+![Get-UserPP]({{ "/img/2019-03-13-Fine-Grained-Password-Policies/Get-UserPP.JPG" | absolute_url }})
 
 One important thing to note: Once a FGPP is applied to an account, the account does not immediately require a password change if it does not meet the current criteria (MinPasswordLength).  Users will continue to use their current password settings until their password reaches its expiration or is changed.  FGPP are not password filters but simply provide a way to apply different settings (other than those in the Default Domain Policy) to specific users or groups.  Creating a FGPP is a simple and straight forward process - it doesn't matter if you do via the GUI or in PowerShell.  Use Fine-Grained Password Policies are a means to ensure privileged accounts are using appropriate password lengths.  Build the Foundation - Stack the Layers.  Defense in Depth.<br>
