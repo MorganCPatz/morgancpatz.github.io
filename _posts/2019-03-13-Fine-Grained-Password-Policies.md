@@ -30,11 +30,11 @@ Now that's FGPP has been briefly explained as well as  the idea and purpose behi
 * Configure desired settings:  Length/History/Complexity/Age/Lockout Policy
 * Add Groups the FGPP will Directly Apply To:<br>
 
-![Active-Directory-Administration-Center]({{ "/img/2019-03-13-Fine-Grained-Password-Policies/ADAC.jpg" | absolute_url }})<br>
-![Create-FGPP]({{ "/img/2019-03-13-Fine-Grained-Password-Policies/Create-FGPP.jpg" | absolute_url }})
+![Active-Directory-Administration-Center]({{ "/img/2019-03-13-Fine-Grained-Password-Policies/ADAC.JPG" | absolute_url }})<br>
+![Create-FGPP]({{ "/img/2019-03-13-Fine-Grained-Password-Policies/Create-FGPP.JPG" | absolute_url }})
 
 **Default Settings when creating a FGPP**
-![Default-FGPP]({{ "/img/2019-03-13-Fine-Grained-Password-Policies/Default-FGPP.jpg" | absolute_url }})
+![Default-FGPP]({{ "/img/2019-03-13-Fine-Grained-Password-Policies/Default-FGPP.JPG" | absolute_url }})
 
 Using the GUI to create and configure a FGPP is pretty straight-forward.  Any of the settings or configurations shown above can just as easily be configured in PowerShell.<br>
 
