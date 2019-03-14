@@ -62,7 +62,7 @@ In the screenshot below, I created a FGPP named "FGPP - IT WSA"
 Everything above should make sense - there are a couple of settings we did not configure.  Namely, we didn't specify who the policy Applies To. This is easy enough to set with the following cmd:<br>
 `Add-ADFineGrainedPasswordPolicy -Identity 'FGPP - IT WSA' -Subjects 'IT_WSA'`<br><br>
 This will add apply the FGPP to our group for Workstation Administrators - "IT_WSA"
-![WAC-ADD-FGPP]({{ "/img/2019-03-13-Fine-Grained-Password-Policies/WAC-ADD-FGPP.jpg" | absolute_url }})
+![WAC-ADD-FGPP]({{ "/img/2019-03-13-Fine-Grained-Password-Policies/WAC-ADD-FGPP.JPG" | absolute_url }})
 
 Looking at our FGPP in the Active Directory Administrative Center , we can confirm that what we see in PowerShell matches what we see in the GUI.
 ![GUI-FGPP]({{ "/img/2019-03-13-Fine-Grained-Password-Policies/GUI-FGPP.jpg" | absolute_url }})
