@@ -55,8 +55,8 @@ type-speed: 10
 start-delay: 200
 delete-delay: 2500
 lines: # You can add HTML Tags in the Text
-  - text: "Initial build complete and...we're live!"
-  - text: "New post coming soon:  Topic TBD"
+  - text: "Latest PowerShell Function: Set-OUGPODelegations"
+  - text: "Build the Foundation - Stack the Layers.  Defense in Depth."
   # - text: "Build the Foundation - Stack the Layers."
  # - text: "Defense in Depth."
 
